@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+  @StateObject var game = GuessingGame()
+  @State private var showStats = false
+
+  var body: some View {
+    VStack {
+      Text("Jaime's Words")
+            .font(.title)
+            .accessibilityAddTraits(.isHeader)
+            .foregroundColor(.green)
+      GameBoardView(game: game)
+      KeyboardView(game: game)
+        .padding(5)
+        ActionBarView(showStats: $showStats, game: game)
     }
+    .frame(alignment: .top)
+    .padding([.bottom], 10)
+    .background(.black)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

@@ -14,6 +14,25 @@
 		DA9E49CE2A2034EB00662175 /* tech_wordleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49CD2A2034EB00662175 /* tech_wordleTests.swift */; };
 		DA9E49D82A2034EB00662175 /* tech_wordleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49D72A2034EB00662175 /* tech_wordleUITests.swift */; };
 		DA9E49DA2A2034EB00662175 /* tech_wordleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49D92A2034EB00662175 /* tech_wordleUITestsLaunchTests.swift */; };
+		DA9E49E92A20355300662175 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49E82A20355300662175 /* Dictionary.swift */; };
+		DA9E49EB2A20355D00662175 /* GameStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49EA2A20355D00662175 /* GameStatistics.swift */; };
+		DA9E49ED2A20356700662175 /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49EC2A20356700662175 /* Guess.swift */; };
+		DA9E49EF2A20357100662175 /* GuessedLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49EE2A20357100662175 /* GuessedLetter.swift */; };
+		DA9E49F12A20358400662175 /* GuessingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49F02A20358400662175 /* GuessingGame.swift */; };
+		DA9E49F52A2035C900662175 /* common-words-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA9E49F32A2035C900662175 /* common-words-5.txt */; };
+		DA9E49F62A2035C900662175 /* words-5.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA9E49F42A2035C900662175 /* words-5.txt */; };
+		DA9E49F82A2035E800662175 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49F72A2035E800662175 /* KeyboardView.swift */; };
+		DA9E49FA2A2035F400662175 /* KeyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49F92A2035F400662175 /* KeyButtonView.swift */; };
+		DA9E49FC2A20361500662175 /* ActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49FB2A20361500662175 /* ActivitySheetView.swift */; };
+		DA9E49FE2A20362300662175 /* ResultsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49FD2A20362300662175 /* ResultsSummaryView.swift */; };
+		DA9E4A002A20363500662175 /* ShowResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E49FF2A20363500662175 /* ShowResultView.swift */; };
+		DA9E4A022A20364500662175 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A012A20364500662175 /* StatisticsView.swift */; };
+		DA9E4A042A20365700662175 /* ActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A032A20365700662175 /* ActionBarView.swift */; };
+		DA9E4A062A20366700662175 /* CurrentGuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A052A20366700662175 /* CurrentGuessView.swift */; };
+		DA9E4A082A20367100662175 /* EmptyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A072A20367100662175 /* EmptyBoxView.swift */; };
+		DA9E4A0A2A20367A00662175 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A092A20367A00662175 /* GameBoardView.swift */; };
+		DA9E4A0C2A2036AB00662175 /* GameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0B2A2036AB00662175 /* GameResultView.swift */; };
+		DA9E4A0E2A2036B700662175 /* GuessBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +63,25 @@
 		DA9E49D32A2034EB00662175 /* tech-wordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tech-wordleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9E49D72A2034EB00662175 /* tech_wordleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleUITests.swift; sourceTree = "<group>"; };
 		DA9E49D92A2034EB00662175 /* tech_wordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA9E49E82A20355300662175 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		DA9E49EA2A20355D00662175 /* GameStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatistics.swift; sourceTree = "<group>"; };
+		DA9E49EC2A20356700662175 /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
+		DA9E49EE2A20357100662175 /* GuessedLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessedLetter.swift; sourceTree = "<group>"; };
+		DA9E49F02A20358400662175 /* GuessingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessingGame.swift; sourceTree = "<group>"; };
+		DA9E49F32A2035C900662175 /* common-words-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "common-words-5.txt"; sourceTree = "<group>"; };
+		DA9E49F42A2035C900662175 /* words-5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "words-5.txt"; sourceTree = "<group>"; };
+		DA9E49F72A2035E800662175 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		DA9E49F92A2035F400662175 /* KeyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButtonView.swift; sourceTree = "<group>"; };
+		DA9E49FB2A20361500662175 /* ActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySheetView.swift; sourceTree = "<group>"; };
+		DA9E49FD2A20362300662175 /* ResultsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsSummaryView.swift; sourceTree = "<group>"; };
+		DA9E49FF2A20363500662175 /* ShowResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowResultView.swift; sourceTree = "<group>"; };
+		DA9E4A012A20364500662175 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		DA9E4A032A20365700662175 /* ActionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarView.swift; sourceTree = "<group>"; };
+		DA9E4A052A20366700662175 /* CurrentGuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGuessView.swift; sourceTree = "<group>"; };
+		DA9E4A072A20367100662175 /* EmptyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBoxView.swift; sourceTree = "<group>"; };
+		DA9E4A092A20367A00662175 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		DA9E4A0B2A2036AB00662175 /* GameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultView.swift; sourceTree = "<group>"; };
+		DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +132,9 @@
 		DA9E49BB2A2034EA00662175 /* tech-wordle */ = {
 			isa = PBXGroup;
 			children = (
+				DA9E49F22A20359000662175 /* Resources */,
+				DA9E49E72A2034FD00662175 /* Models */,
+				DA9E49E62A2034F600662175 /* Views */,
 				DA9E49BC2A2034EA00662175 /* tech_wordleApp.swift */,
 				DA9E49BE2A2034EA00662175 /* ContentView.swift */,
 				DA9E49C02A2034EB00662175 /* Assets.xcassets */,
@@ -125,6 +166,46 @@
 				DA9E49D92A2034EB00662175 /* tech_wordleUITestsLaunchTests.swift */,
 			);
 			path = "tech-wordleUITests";
+			sourceTree = "<group>";
+		};
+		DA9E49E62A2034F600662175 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA9E49F72A2035E800662175 /* KeyboardView.swift */,
+				DA9E49F92A2035F400662175 /* KeyButtonView.swift */,
+				DA9E49FB2A20361500662175 /* ActivitySheetView.swift */,
+				DA9E49FD2A20362300662175 /* ResultsSummaryView.swift */,
+				DA9E49FF2A20363500662175 /* ShowResultView.swift */,
+				DA9E4A012A20364500662175 /* StatisticsView.swift */,
+				DA9E4A032A20365700662175 /* ActionBarView.swift */,
+				DA9E4A052A20366700662175 /* CurrentGuessView.swift */,
+				DA9E4A072A20367100662175 /* EmptyBoxView.swift */,
+				DA9E4A092A20367A00662175 /* GameBoardView.swift */,
+				DA9E4A0B2A2036AB00662175 /* GameResultView.swift */,
+				DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA9E49E72A2034FD00662175 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA9E49E82A20355300662175 /* Dictionary.swift */,
+				DA9E49EA2A20355D00662175 /* GameStatistics.swift */,
+				DA9E49EC2A20356700662175 /* Guess.swift */,
+				DA9E49EE2A20357100662175 /* GuessedLetter.swift */,
+				DA9E49F02A20358400662175 /* GuessingGame.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA9E49F22A20359000662175 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA9E49F32A2035C900662175 /* common-words-5.txt */,
+				DA9E49F42A2035C900662175 /* words-5.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +314,8 @@
 			files = (
 				DA9E49C42A2034EB00662175 /* Preview Assets.xcassets in Resources */,
 				DA9E49C12A2034EB00662175 /* Assets.xcassets in Resources */,
+				DA9E49F62A2035C900662175 /* words-5.txt in Resources */,
+				DA9E49F52A2035C900662175 /* common-words-5.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +340,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9E4A082A20367100662175 /* EmptyBoxView.swift in Sources */,
+				DA9E4A0C2A2036AB00662175 /* GameResultView.swift in Sources */,
+				DA9E4A0E2A2036B700662175 /* GuessBoxView.swift in Sources */,
+				DA9E49EF2A20357100662175 /* GuessedLetter.swift in Sources */,
+				DA9E4A0A2A20367A00662175 /* GameBoardView.swift in Sources */,
+				DA9E49F82A2035E800662175 /* KeyboardView.swift in Sources */,
+				DA9E4A002A20363500662175 /* ShowResultView.swift in Sources */,
+				DA9E49FA2A2035F400662175 /* KeyButtonView.swift in Sources */,
+				DA9E49EB2A20355D00662175 /* GameStatistics.swift in Sources */,
+				DA9E4A022A20364500662175 /* StatisticsView.swift in Sources */,
+				DA9E4A042A20365700662175 /* ActionBarView.swift in Sources */,
+				DA9E4A062A20366700662175 /* CurrentGuessView.swift in Sources */,
 				DA9E49BF2A2034EA00662175 /* ContentView.swift in Sources */,
+				DA9E49F12A20358400662175 /* GuessingGame.swift in Sources */,
 				DA9E49BD2A2034EA00662175 /* tech_wordleApp.swift in Sources */,
+				DA9E49E92A20355300662175 /* Dictionary.swift in Sources */,
+				DA9E49ED2A20356700662175 /* Guess.swift in Sources */,
+				DA9E49FC2A20361500662175 /* ActivitySheetView.swift in Sources */,
+				DA9E49FE2A20362300662175 /* ResultsSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +520,7 @@
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +550,7 @@
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
