@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrentGuessView: View {
-    
+    @State var shakeOffset = 0.0
     @Binding var guess: Guess
     var wordLength: Int
     
@@ -25,6 +25,9 @@ struct CurrentGuessView: View {
                 ForEach(guess.word.indices, id: \.self) { index in
                     let letter = guess.word[index]
                     GuessBoxView(letter: letter, size: width, index: index)
+                        .accessibilityLabel(
+                            letter.status == .unknown ? letter.letter : "\(letter.letter) \(letter.status.rawValue)"
+                        )
                 }
                 ForEach(0..<unguessedLetters, id: \.self) { _ in
                     EmptyBoxView(size: width)
@@ -33,6 +36,23 @@ struct CurrentGuessView: View {
                 Spacer()
             }
             .padding(5.0)
+            .offset(x: shakeOffset)
+            .onChange(of: guess.status) { newValue in
+                if newValue == .invalidWord {
+                    withAnimation(.linear(duration: 0.1).repeatCount(3)) {
+                        shakeOffset = -15.0
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        withAnimation(.linear(duration: 0.1).repeatCount(3)) {
+                            shakeOffset = 0.0
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                guess.status = .pending
+                            }
+                        }
+                    }
+                }
+            }
             .overlay(
                 Group {
                     if guess.status == .invalidWord {
