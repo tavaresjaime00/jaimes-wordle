@@ -38,8 +38,8 @@ struct StatisticsView: View {
                 }
             }
         }
-        .padding(.horizontal, 50.0)
-        .padding(.vertical, 175.0)
+        .padding(.horizontal, 70.0)
+        .padding(.vertical, 200.0)
         .background(.black)
         .foregroundColor(.white)
     }

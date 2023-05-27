@@ -179,13 +179,13 @@ class GuessingGame: ObservableObject {
         
         switch status {
         case .unknown:
-            return Color(UIColor.darkGray)
+            return Color.black.opacity(0.7)
         case .inPosition:
             return Color.green
         case .notInPosition:
             return Color.yellow
         case .notInWord:
-            return Color.gray.opacity(0.67)
+            return Color.red.opacity(0.67)
         }
     }
     

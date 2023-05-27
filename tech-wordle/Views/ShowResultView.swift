@@ -40,8 +40,9 @@ struct ShowResultView: View {
             let text = game.shareResultText ?? ""
             ActivitySheetView(activityItems: [text])
         }
-      .font(.title3)
-      .multilineTextAlignment(.center)
+        .foregroundColor(.white)
+        .font(.title3)
+        .multilineTextAlignment(.center)
     }
 }
 

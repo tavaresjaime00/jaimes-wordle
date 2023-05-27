@@ -23,6 +23,7 @@ struct GameResultView: View {
           }
           Text("The word was \(game.targetWord).")
               .font(.title2)
+              .foregroundColor(.white)
           ScrollView {
               ShowResultView(game: game)
               StatisticsView(stats: GameStatistics(gameRecord: game.gameRecord))
