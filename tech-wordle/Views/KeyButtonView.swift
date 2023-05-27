@@ -22,7 +22,7 @@ struct KeyButtonView: View {
           Image(systemName: "return").foregroundColor(.green)
       default:
         Text(key)
-          .aspectRatio(1.0, contentMode: .fit)
+          .aspectRatio(2.0, contentMode: .fit)
           .frame(maxWidth: .infinity).foregroundColor(.white)
       }
     }
@@ -31,6 +31,7 @@ struct KeyButtonView: View {
       RoundedRectangle(cornerRadius: 6.0)
         .stroke()
     }
+    .background(game.colorForKey(key: key))
     .foregroundColor(Color(.white))
   }
 }

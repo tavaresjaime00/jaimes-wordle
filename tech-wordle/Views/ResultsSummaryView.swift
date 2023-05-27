@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ResultsSummaryView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  @ObservedObject var game: GuessingGame
+  @State private var showShare = false
+
+  var body: some View {
+    Text("Placeholder")
+  }
 }
 
 struct ResultsSummaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultsSummaryView()
-    }
+  static var previews: some View {
+    ResultsSummaryView(game: GuessingGame())
+  }
 }

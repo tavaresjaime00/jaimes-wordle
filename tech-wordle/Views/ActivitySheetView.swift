@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct ActivitySheetView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct ActivitySheetView: UIViewControllerRepresentable {
+  
+    let activityItems: [Any]
 
-struct ActivitySheetView_Previews: PreviewProvider {
-    static var previews: some View {
-        ActivitySheetView()
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(
+            activityItems: activityItems,
+            applicationActivities: nil)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
+        uiViewController.popoverPresentationController?.backgroundColor = UIColor(.black)
     }
 }

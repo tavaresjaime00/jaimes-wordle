@@ -14,14 +14,25 @@ struct ActionBarView: View {
     
     var body: some View {
       HStack {
+        Button {
+            showStats = true
+        } label: {
+            Image(systemName: "chart.bar")
+                .imageScale(.large)
+                .foregroundColor(.gray)
+                .accessibilityLabel("Show Statistics")
+        }
         Spacer()
         Button {
             game.newGame()
         } label: {
           Text("New Game")
-                .accessibilityLabel("New Game").foregroundColor(.white)
+                //.foregroundColor(.white)
+                .foregroundColor(.green)
+                .accessibilityLabel("New Game")
         }
         .disabled(game.status == .inprogress || game.status == .new)
+        .hoverEffect(.lift)
       }.padding(7)
     }
   }

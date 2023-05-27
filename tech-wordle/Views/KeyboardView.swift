@@ -21,9 +21,12 @@ struct KeyboardView: View {
 
               
                 KeyButtonView(game: game, key: key)
+                    .accessibilityLabel(
+                        game.statusForLetter(letter: key) == .unknown ? key : "\(key) \(game.statusForLetter(letter: key).rawValue)"
+                    )
                 
             }
-        }.padding(4)
+        }.padding(5)
       }
     }
   }

@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct GameResultView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  @ObservedObject var game: GuessingGame
+
+  var body: some View {
+      VStack {
+          if game.status == .won {
+              Text("You got it, superstar!")
+                  .font(.title)
+                  .foregroundColor(.green)
+          } else {
+              Text("Sorry, you didn't get it in \(game.maxGuesses) guesses.")
+                  .font(.title2)
+                  .foregroundColor(.red)
+          }
+          Text("The word was \(game.targetWord).")
+              .font(.title2)
+          ScrollView {
+              ShowResultView(game: game)
+              StatisticsView(stats: GameStatistics(gameRecord: game.gameRecord))
+          }
+      }
+  }
 }
 
 struct GameResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameResultView()
-    }
+  static var previews: some View {
+      Group {
+        GameResultView(
+          game: GuessingGame.wonGame()
+        )
+        GameResultView(
+          game: GuessingGame.lostGame()
+        )
+      }
+
+  }
 }

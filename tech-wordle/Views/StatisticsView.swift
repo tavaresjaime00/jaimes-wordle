@@ -8,13 +8,47 @@
 import SwiftUI
 
 struct StatisticsView: View {
+    var stats: GameStatistics
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack(spacing: 75.0) {
+                VStack(spacing: 25.0) {
+                    Text("Game Statistics")
+                        .font(.title)
+                    Text("Played: \(stats.gamesPlayed)  ") +
+                    Text("Won: \(stats.gamesWon) (\(stats.percentageWon) %) ") +
+                    Text("Win Streak: \(stats.currentWinStreak)  ") +
+                    Text("Max Streak: \(stats.maxWinStreak)  ")
+                }
+                VStack(alignment: .leading) {
+                    Text("Winning Guess Distribution")
+                        .font(.title)
+                    
+                    let maxDistribution = Double(stats.winRound.max() ?? 1)
+                    ForEach(stats.winRound.indices, id: \.self) { index in
+                        let barCount = stats.winRound[index]
+                        let barLength = barCount > 0 ? Double(barCount) / maxDistribution * 250.0 : 1
+                        HStack {
+                            Text("\(index + 1):")
+                            Rectangle()
+                                .frame(width: barLength, height: 20.0)
+                            Text("\(barCount)")
+                        }
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 50.0)
+        .padding(.vertical, 175.0)
+        .background(.black)
+        .foregroundColor(.white)
     }
 }
 
+
+
 struct StatisticsView_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticsView()
+        StatisticsView(stats: GameStatistics(gameRecord: ""))
     }
 }
