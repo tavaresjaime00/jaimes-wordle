@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA9E49B82A2034EA00662175"
-               BuildableName = "Jays Words.app"
-               BlueprintName = "Jays Words"
-               ReferencedContainer = "container:Jays Words.xcodeproj">
+               BuildableName = "JaysWords.app"
+               BlueprintName = "JaysWords"
+               ReferencedContainer = "container:JaysWords.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA9E49C82A2034EB00662175"
-               BuildableName = "Jays WordsTests.xctest"
-               BlueprintName = "Jays WordsTests"
-               ReferencedContainer = "container:Jays Words.xcodeproj">
+               BuildableName = "JaysWordsTests.xctest"
+               BlueprintName = "JaysWordsTests"
+               ReferencedContainer = "container:JaysWords.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA9E49D22A2034EB00662175"
-               BuildableName = "Jays WordsUITests.xctest"
-               BlueprintName = "Jays WordsUITests"
-               ReferencedContainer = "container:Jays Words.xcodeproj">
+               BuildableName = "JaysWordsUITests.xctest"
+               BlueprintName = "JaysWordsUITests"
+               ReferencedContainer = "container:JaysWords.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA9E49B82A2034EA00662175"
-            BuildableName = "Jays Words.app"
-            BlueprintName = "Jays Words"
-            ReferencedContainer = "container:Jays Words.xcodeproj">
+            BuildableName = "JaysWords.app"
+            BlueprintName = "JaysWords"
+            ReferencedContainer = "container:JaysWords.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA9E49B82A2034EA00662175"
-            BuildableName = "Jays Words.app"
-            BlueprintName = "Jays Words"
-            ReferencedContainer = "container:Jays Words.xcodeproj">
+            BuildableName = "JaysWords.app"
+            BlueprintName = "JaysWords"
+            ReferencedContainer = "container:JaysWords.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

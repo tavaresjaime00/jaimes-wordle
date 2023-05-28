@@ -53,14 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA9E49B92A2034EA00662175 /* Jays Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jays Words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9E49B92A2034EA00662175 /* JaysWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JaysWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9E49BC2A2034EA00662175 /* tech_wordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleApp.swift; sourceTree = "<group>"; };
 		DA9E49BE2A2034EA00662175 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA9E49C02A2034EB00662175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9E49C32A2034EB00662175 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA9E49C92A2034EB00662175 /* Jays WordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jays WordsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9E49C92A2034EB00662175 /* JaysWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaysWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9E49CD2A2034EB00662175 /* tech_wordleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleTests.swift; sourceTree = "<group>"; };
-		DA9E49D32A2034EB00662175 /* Jays WordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jays WordsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9E49D32A2034EB00662175 /* JaysWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaysWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9E49D72A2034EB00662175 /* tech_wordleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleUITests.swift; sourceTree = "<group>"; };
 		DA9E49D92A2034EB00662175 /* tech_wordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA9E49E82A20355300662175 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -122,9 +122,9 @@
 		DA9E49BA2A2034EA00662175 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA9E49B92A2034EA00662175 /* Jays Words.app */,
-				DA9E49C92A2034EB00662175 /* Jays WordsTests.xctest */,
-				DA9E49D32A2034EB00662175 /* Jays WordsUITests.xctest */,
+				DA9E49B92A2034EA00662175 /* JaysWords.app */,
+				DA9E49C92A2034EB00662175 /* JaysWordsTests.xctest */,
+				DA9E49D32A2034EB00662175 /* JaysWordsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA9E49B82A2034EA00662175 /* Jays Words */ = {
+		DA9E49B82A2034EA00662175 /* JaysWords */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays Words" */;
+			buildConfigurationList = DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWords" */;
 			buildPhases = (
 				DA9E49B52A2034EA00662175 /* Sources */,
 				DA9E49B62A2034EA00662175 /* Frameworks */,
@@ -223,14 +223,14 @@
 			);
 			dependencies = (
 			);
-			name = "Jays Words";
+			name = JaysWords;
 			productName = "tech-wordle";
-			productReference = DA9E49B92A2034EA00662175 /* Jays Words.app */;
+			productReference = DA9E49B92A2034EA00662175 /* JaysWords.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA9E49C82A2034EB00662175 /* Jays WordsTests */ = {
+		DA9E49C82A2034EB00662175 /* JaysWordsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9E49E02A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays WordsTests" */;
+			buildConfigurationList = DA9E49E02A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWordsTests" */;
 			buildPhases = (
 				DA9E49C52A2034EB00662175 /* Sources */,
 				DA9E49C62A2034EB00662175 /* Frameworks */,
@@ -241,14 +241,14 @@
 			dependencies = (
 				DA9E49CB2A2034EB00662175 /* PBXTargetDependency */,
 			);
-			name = "Jays WordsTests";
+			name = JaysWordsTests;
 			productName = "tech-wordleTests";
-			productReference = DA9E49C92A2034EB00662175 /* Jays WordsTests.xctest */;
+			productReference = DA9E49C92A2034EB00662175 /* JaysWordsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA9E49D22A2034EB00662175 /* Jays WordsUITests */ = {
+		DA9E49D22A2034EB00662175 /* JaysWordsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9E49E32A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays WordsUITests" */;
+			buildConfigurationList = DA9E49E32A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWordsUITests" */;
 			buildPhases = (
 				DA9E49CF2A2034EB00662175 /* Sources */,
 				DA9E49D02A2034EB00662175 /* Frameworks */,
@@ -259,9 +259,9 @@
 			dependencies = (
 				DA9E49D52A2034EB00662175 /* PBXTargetDependency */,
 			);
-			name = "Jays WordsUITests";
+			name = JaysWordsUITests;
 			productName = "tech-wordleUITests";
-			productReference = DA9E49D32A2034EB00662175 /* Jays WordsUITests.xctest */;
+			productReference = DA9E49D32A2034EB00662175 /* JaysWordsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -287,7 +287,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA9E49B42A2034EA00662175 /* Build configuration list for PBXProject "Jays Words" */;
+			buildConfigurationList = DA9E49B42A2034EA00662175 /* Build configuration list for PBXProject "JaysWords" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,9 +300,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA9E49B82A2034EA00662175 /* Jays Words */,
-				DA9E49C82A2034EB00662175 /* Jays WordsTests */,
-				DA9E49D22A2034EB00662175 /* Jays WordsUITests */,
+				DA9E49B82A2034EA00662175 /* JaysWords */,
+				DA9E49C82A2034EB00662175 /* JaysWordsTests */,
+				DA9E49D22A2034EB00662175 /* JaysWordsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,12 +384,12 @@
 /* Begin PBXTargetDependency section */
 		DA9E49CB2A2034EB00662175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9E49B82A2034EA00662175 /* Jays Words */;
+			target = DA9E49B82A2034EA00662175 /* JaysWords */;
 			targetProxy = DA9E49CA2A2034EB00662175 /* PBXContainerItemProxy */;
 		};
 		DA9E49D52A2034EB00662175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9E49B82A2034EA00662175 /* Jays Words */;
+			target = DA9E49B82A2034EA00662175 /* JaysWords */;
 			targetProxy = DA9E49D42A2034EB00662175 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -597,7 +597,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jays Words.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jays Words";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JaysWords.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JaysWords";
 			};
 			name = Debug;
 		};
@@ -617,7 +617,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jays Words.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jays Words";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JaysWords.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JaysWords";
 			};
 			name = Release;
 		};
@@ -660,7 +660,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA9E49B42A2034EA00662175 /* Build configuration list for PBXProject "Jays Words" */ = {
+		DA9E49B42A2034EA00662175 /* Build configuration list for PBXProject "JaysWords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9E49DB2A2034EB00662175 /* Debug */,
@@ -669,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays Words" */ = {
+		DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9E49DE2A2034EB00662175 /* Debug */,
@@ -678,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9E49E02A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays WordsTests" */ = {
+		DA9E49E02A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWordsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9E49E12A2034EB00662175 /* Debug */,
@@ -687,7 +687,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9E49E32A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays WordsUITests" */ = {
+		DA9E49E32A2034EB00662175 /* Build configuration list for PBXNativeTarget "JaysWordsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9E49E42A2034EB00662175 /* Debug */,
