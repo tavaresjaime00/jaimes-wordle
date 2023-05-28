@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA9E49B92A2034EA00662175 /* tech-wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tech-wordle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9E49B92A2034EA00662175 /* Jays Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jays Words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9E49BC2A2034EA00662175 /* tech_wordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tech_wordleApp.swift; sourceTree = "<group>"; };
 		DA9E49BE2A2034EA00662175 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA9E49C02A2034EB00662175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		DA9E49BA2A2034EA00662175 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA9E49B92A2034EA00662175 /* tech-wordle.app */,
+				DA9E49B92A2034EA00662175 /* Jays Words.app */,
 				DA9E49C92A2034EB00662175 /* tech-wordleTests.xctest */,
 				DA9E49D32A2034EB00662175 /* tech-wordleUITests.xctest */,
 			);
@@ -211,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA9E49B82A2034EA00662175 /* tech-wordle */ = {
+		DA9E49B82A2034EA00662175 /* Jays Words */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "tech-wordle" */;
+			buildConfigurationList = DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays Words" */;
 			buildPhases = (
 				DA9E49B52A2034EA00662175 /* Sources */,
 				DA9E49B62A2034EA00662175 /* Frameworks */,
@@ -223,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = "tech-wordle";
+			name = "Jays Words";
 			productName = "tech-wordle";
-			productReference = DA9E49B92A2034EA00662175 /* tech-wordle.app */;
+			productReference = DA9E49B92A2034EA00662175 /* Jays Words.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DA9E49C82A2034EB00662175 /* tech-wordleTests */ = {
@@ -300,7 +300,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA9E49B82A2034EA00662175 /* tech-wordle */,
+				DA9E49B82A2034EA00662175 /* Jays Words */,
 				DA9E49C82A2034EB00662175 /* tech-wordleTests */,
 				DA9E49D22A2034EB00662175 /* tech-wordleUITests */,
 			);
@@ -384,12 +384,12 @@
 /* Begin PBXTargetDependency section */
 		DA9E49CB2A2034EB00662175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9E49B82A2034EA00662175 /* tech-wordle */;
+			target = DA9E49B82A2034EA00662175 /* Jays Words */;
 			targetProxy = DA9E49CA2A2034EB00662175 /* PBXContainerItemProxy */;
 		};
 		DA9E49D52A2034EB00662175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA9E49B82A2034EA00662175 /* tech-wordle */;
+			target = DA9E49B82A2034EA00662175 /* Jays Words */;
 			targetProxy = DA9E49D42A2034EB00662175 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,7 +428,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -449,7 +449,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,7 +493,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -508,7 +508,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"tech-wordle/Preview Content\"";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
@@ -540,7 +540,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -555,7 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"tech-wordle/Preview Content\"";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
@@ -570,7 +570,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "tech-wordle" */ = {
+		DA9E49DD2A2034EB00662175 /* Build configuration list for PBXNativeTarget "Jays Words" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA9E49DE2A2034EB00662175 /* Debug */,
