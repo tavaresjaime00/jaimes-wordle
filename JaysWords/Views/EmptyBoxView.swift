@@ -19,6 +19,7 @@ struct EmptyBoxView: View {
 
 struct EmptyBoxView_Previews: PreviewProvider {
   static var previews: some View {
-    EmptyBoxView(size: 50.0)
+      let width = UIDevice.current.accessibilityFrame.width
+      EmptyBoxView(size: width / 8)
   }
 }

@@ -2488,7 +2488,6 @@ fadge
 faery
 faffy
 fager
-fagot
 faham
 fains
 faint
@@ -5180,7 +5179,6 @@ penal
 pence
 penda
 pengo
-penis
 penna
 penni
 penny
@@ -5527,7 +5525,6 @@ purre
 purry
 purse
 pursy
-pussy
 putid
 putty
 pyche
