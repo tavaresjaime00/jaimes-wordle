@@ -17,22 +17,28 @@ struct KeyButtonView: View {
     } label: {
       switch key {
       case "<":
-          Image(systemName: "delete.backward").foregroundColor(.red).opacity(0.9)
+          Image(systemName: "delete.backward")
+              .foregroundColor(.red).opacity(0.9)
+              .font(.system(size: 6.0))
       case ">":
-          Image(systemName: "return").foregroundColor(.green)
+          Image(systemName: "return")
+              .foregroundColor(.green)
+              .font(.system(size: 6.0))
       default:
         Text(key)
-          .aspectRatio(2.0, contentMode: .fit)
+              .aspectRatio(1.0, contentMode: .fit)
           .frame(maxWidth: .infinity).foregroundColor(.white)
+           
       }
     }
-    .padding(6)
+    .padding(2)
     .background {
       RoundedRectangle(cornerRadius: 6.0)
         .stroke()
     }
     .background(game.colorForKey(key: key))
     .foregroundColor(Color(.white))
+    
   }
 }
 
@@ -40,7 +46,7 @@ struct KeyButtonView_Previews: PreviewProvider {
   static var previews: some View {
     let game = GuessingGame()
     Group {
-      KeyButtonView(game: game, key: "<")
+      KeyButtonView(game: game, key: "S")
     }
   }
 }

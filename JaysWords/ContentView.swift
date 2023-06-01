@@ -20,9 +20,11 @@ struct ContentView: View {
                 .font(.title)
                 .accessibilityAddTraits(.isHeader)
                 .foregroundColor(.green)
-            GameBoardView(game: game)
+
+                GameBoardView(game: game)
+
+            
             KeyboardView(game: game)
-                .padding(5)
             ActionBarView(showStats: $showStats, game: game)
         }
         .sheet(isPresented: $showResults) {
@@ -49,7 +51,7 @@ struct ContentView: View {
             }
         }
         .frame(alignment: .top)
-        .padding([.bottom], 10)
+        .padding(.bottom)
         .background(.black)
         }
     }

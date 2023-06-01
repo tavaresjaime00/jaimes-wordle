@@ -18,8 +18,8 @@ struct ActionBarView: View {
             showStats = true
         } label: {
             Image(systemName: "chart.bar")
-                .imageScale(.large)
-                .foregroundColor(.gray)
+                .imageScale(.medium)
+                .foregroundColor(.green)
                 .accessibilityLabel("Show Statistics")
         }
         Spacer()
