@@ -11,6 +11,7 @@ struct ActionBarView: View {
     @Binding var showStats: Bool
     @ObservedObject var game: GuessingGame
 
+    let dynamicSize = UIScreen.main.bounds.width / 20
     
     var body: some View {
       HStack {
@@ -18,7 +19,7 @@ struct ActionBarView: View {
             showStats = true
         } label: {
             Image(systemName: "chart.bar")
-                .imageScale(.medium)
+                .font(.system(size: dynamicSize * 1.2))
                 .foregroundColor(.green)
                 .accessibilityLabel("Show Statistics")
         }
@@ -30,6 +31,7 @@ struct ActionBarView: View {
                 //.foregroundColor(.white)
                 .foregroundColor(.green)
                 .accessibilityLabel("New Game")
+                .font(.system(size: dynamicSize))
         }
         .disabled(game.status == .inprogress || game.status == .new)
         .hoverEffect(.lift)

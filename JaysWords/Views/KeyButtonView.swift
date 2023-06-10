@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct KeyButtonView: View {
-  @ObservedObject var game: GuessingGame
-  var key: String
+    @ObservedObject var game: GuessingGame
+    var key: String
+    @ScaledMetric var dynamicSize: CGFloat = 1
 
   var body: some View {
     Button {
@@ -19,25 +20,28 @@ struct KeyButtonView: View {
       case "<":
           Image(systemName: "delete.backward")
               .foregroundColor(.red).opacity(0.9)
-              .font(.system(size: 6.0))
+              .frame(maxWidth: .infinity)
+
       case ">":
           Image(systemName: "return")
               .foregroundColor(.green)
-              .font(.system(size: 6.0))
+              .frame(maxWidth: .infinity)
       default:
         Text(key)
-              .aspectRatio(1.0, contentMode: .fit)
-          .frame(maxWidth: .infinity).foregroundColor(.white)
+          .aspectRatio(dynamicSize, contentMode: .fit)
+          .frame(maxWidth: .infinity)
+          .foregroundColor(.white)
            
       }
     }
-    .padding(2)
+    .padding(dynamicSize)
     .background {
       RoundedRectangle(cornerRadius: 6.0)
         .stroke()
     }
     .background(game.colorForKey(key: key))
     .foregroundColor(Color(.white))
+    .font(.system(size: UIScreen.main.bounds.width/20))
     
   }
 }
@@ -46,7 +50,7 @@ struct KeyButtonView_Previews: PreviewProvider {
   static var previews: some View {
     let game = GuessingGame()
     Group {
-      KeyButtonView(game: game, key: "S")
+      KeyButtonView(game: game, key: "s")
     }
   }
 }
