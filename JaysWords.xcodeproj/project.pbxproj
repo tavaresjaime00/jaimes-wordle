@@ -33,9 +33,9 @@
 		DA9E4A0A2A20367A00662175 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A092A20367A00662175 /* GameBoardView.swift */; };
 		DA9E4A0C2A2036AB00662175 /* GameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0B2A2036AB00662175 /* GameResultView.swift */; };
 		DA9E4A0E2A2036B700662175 /* GuessBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */; };
+		DADA262A2A686FD600FE1162 /* AdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA26292A686FD600FE1162 /* AdCoordinator.swift */; };
+		DADA262C2A6871BD00FE1162 /* AdViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA262B2A6871BD00FE1162 /* AdViewControllerRepresentable.swift */; };
 		DAE2117B2A67C96700CF4C79 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = DAE2117A2A67C96700CF4C79 /* GoogleMobileAds */; };
-		DAE2117E2A67D3A200CF4C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */; };
-		DAE211802A67D5E600CF4C79 /* AppOpenAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,9 +85,10 @@
 		DA9E4A092A20367A00662175 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		DA9E4A0B2A2036AB00662175 /* GameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultView.swift; sourceTree = "<group>"; };
 		DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessBoxView.swift; sourceTree = "<group>"; };
+		DADA26292A686FD600FE1162 /* AdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCoordinator.swift; sourceTree = "<group>"; };
+		DADA262B2A6871BD00FE1162 /* AdViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		DADA262D2A68765500FE1162 /* JaysWordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "JaysWordsTests-Info.plist"; sourceTree = "<group>"; };
 		DAE2117C2A67C9A400CF4C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 		DA9E49B02A2034EA00662175 = {
 			isa = PBXGroup;
 			children = (
+				DADA262D2A68765500FE1162 /* JaysWordsTests-Info.plist */,
 				DA9E49BB2A2034EA00662175 /* JaysWords */,
 				DA9E49CC2A2034EB00662175 /* tech-wordleTests */,
 				DA9E49D62A2034EB00662175 /* tech-wordleUITests */,
@@ -147,7 +149,6 @@
 				DA9E49BE2A2034EA00662175 /* ContentView.swift */,
 				DA9E49C02A2034EB00662175 /* Assets.xcassets */,
 				DA9E49C22A2034EB00662175 /* Preview Content */,
-				DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */,
 			);
 			path = JaysWords;
 			sourceTree = "<group>";
@@ -204,7 +205,8 @@
 				DA9E49EC2A20356700662175 /* Guess.swift */,
 				DA9E49EE2A20357100662175 /* GuessedLetter.swift */,
 				DA9E49F02A20358400662175 /* GuessingGame.swift */,
-				DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */,
+				DADA26292A686FD600FE1162 /* AdCoordinator.swift */,
+				DADA262B2A6871BD00FE1162 /* AdViewControllerRepresentable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -364,7 +366,6 @@
 				DA9E49F82A2035E800662175 /* KeyboardView.swift in Sources */,
 				DA9E4A002A20363500662175 /* ShowResultView.swift in Sources */,
 				DA9E49FA2A2035F400662175 /* KeyButtonView.swift in Sources */,
-				DAE2117E2A67D3A200CF4C79 /* AppDelegate.swift in Sources */,
 				DA9E49EB2A20355D00662175 /* GameStatistics.swift in Sources */,
 				DA9E4A022A20364500662175 /* StatisticsView.swift in Sources */,
 				DA9E4A042A20365700662175 /* ActionBarView.swift in Sources */,
@@ -373,10 +374,11 @@
 				DA9E49F12A20358400662175 /* GuessingGame.swift in Sources */,
 				DA9E49BD2A2034EA00662175 /* tech_wordleApp.swift in Sources */,
 				DA9E49E92A20355300662175 /* Dictionary.swift in Sources */,
-				DAE211802A67D5E600CF4C79 /* AppOpenAdManager.swift in Sources */,
 				DA9E49ED2A20356700662175 /* Guess.swift in Sources */,
+				DADA262C2A6871BD00FE1162 /* AdViewControllerRepresentable.swift in Sources */,
 				DA9E49FC2A20361500662175 /* ActivitySheetView.swift in Sources */,
 				DA9E49FE2A20362300662175 /* ResultsSummaryView.swift in Sources */,
+				DADA262A2A686FD600FE1162 /* AdCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +448,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.42;
+				CURRENT_PROJECT_VERSION = 1.43;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -468,10 +470,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.42;
+				MARKETING_VERSION = 1.43;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -512,7 +515,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.42;
+				CURRENT_PROJECT_VERSION = 1.43;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -528,9 +531,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.42;
+				MARKETING_VERSION = 1.43;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -545,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.42;
+				CURRENT_PROJECT_VERSION = 1.43;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
@@ -563,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.42;
+				MARKETING_VERSION = 1.43;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -578,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.42;
+				CURRENT_PROJECT_VERSION = 1.43;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
@@ -597,7 +601,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.42;
+				MARKETING_VERSION = 1.43;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -615,6 +619,8 @@
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JaysWordsTests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordleTests";
@@ -635,6 +641,8 @@
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JaysWordsTests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordleTests";

@@ -16,6 +16,10 @@ struct ContentView: View {
     @State private var showStats = false
     @State private var showResults = false
     
+    // Google AdMob implementation (to be added in the background
+    private let adViewControllerRepresentable = AdViewControllerRepresentable()
+    private let adCoordinator = AdCoordinator()
+    
     var body: some View {
         VStack {
             Text("Jay's Words")
@@ -41,6 +45,9 @@ struct ContentView: View {
                     showResults = true
                 }
             }
+            // load and show ad
+            adCoordinator.loadAd()
+            adCoordinator.presentAd(from: adViewControllerRepresentable.viewController)
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {
@@ -55,6 +62,10 @@ struct ContentView: View {
         .frame(alignment: .top)
         .padding(.bottom)
         .background(.black)
+        .background {
+            adViewControllerRepresentable
+                .frame(width: .zero, height: .zero)
+        }
         }
     }
 

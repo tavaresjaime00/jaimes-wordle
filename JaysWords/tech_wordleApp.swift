@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct tech_wordleApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {
