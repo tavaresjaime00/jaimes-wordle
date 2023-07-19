@@ -33,6 +33,9 @@
 		DA9E4A0A2A20367A00662175 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A092A20367A00662175 /* GameBoardView.swift */; };
 		DA9E4A0C2A2036AB00662175 /* GameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0B2A2036AB00662175 /* GameResultView.swift */; };
 		DA9E4A0E2A2036B700662175 /* GuessBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */; };
+		DAE2117B2A67C96700CF4C79 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = DAE2117A2A67C96700CF4C79 /* GoogleMobileAds */; };
+		DAE2117E2A67D3A200CF4C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */; };
+		DAE211802A67D5E600CF4C79 /* AppOpenAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		DA9E4A092A20367A00662175 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		DA9E4A0B2A2036AB00662175 /* GameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultView.swift; sourceTree = "<group>"; };
 		DA9E4A0D2A2036B700662175 /* GuessBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessBoxView.swift; sourceTree = "<group>"; };
+		DAE2117C2A67C9A400CF4C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpenAdManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE2117B2A67C96700CF4C79 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 		DA9E49BB2A2034EA00662175 /* JaysWords */ = {
 			isa = PBXGroup;
 			children = (
+				DAE2117C2A67C9A400CF4C79 /* Info.plist */,
 				DA9E49F22A20359000662175 /* Resources */,
 				DA9E49E72A2034FD00662175 /* Models */,
 				DA9E49E62A2034F600662175 /* Views */,
@@ -139,6 +147,7 @@
 				DA9E49BE2A2034EA00662175 /* ContentView.swift */,
 				DA9E49C02A2034EB00662175 /* Assets.xcassets */,
 				DA9E49C22A2034EB00662175 /* Preview Content */,
+				DAE2117D2A67D3A200CF4C79 /* AppDelegate.swift */,
 			);
 			path = JaysWords;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 				DA9E49EC2A20356700662175 /* Guess.swift */,
 				DA9E49EE2A20357100662175 /* GuessedLetter.swift */,
 				DA9E49F02A20358400662175 /* GuessingGame.swift */,
+				DAE2117F2A67D5E600CF4C79 /* AppOpenAdManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +234,9 @@
 			dependencies = (
 			);
 			name = JaysWords;
+			packageProductDependencies = (
+				DAE2117A2A67C96700CF4C79 /* GoogleMobileAds */,
+			);
 			productName = "tech-wordle";
 			productReference = DA9E49B92A2034EA00662175 /* JaysWords.app */;
 			productType = "com.apple.product-type.application";
@@ -272,7 +285,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DA9E49B82A2034EA00662175 = {
 						CreatedOnToolsVersion = 14.3;
@@ -296,6 +309,9 @@
 				Base,
 			);
 			mainGroup = DA9E49B02A2034EA00662175;
+			packageReferences = (
+				DAE211792A67C96700CF4C79 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = DA9E49BA2A2034EA00662175 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +364,7 @@
 				DA9E49F82A2035E800662175 /* KeyboardView.swift in Sources */,
 				DA9E4A002A20363500662175 /* ShowResultView.swift in Sources */,
 				DA9E49FA2A2035F400662175 /* KeyButtonView.swift in Sources */,
+				DAE2117E2A67D3A200CF4C79 /* AppDelegate.swift in Sources */,
 				DA9E49EB2A20355D00662175 /* GameStatistics.swift in Sources */,
 				DA9E4A022A20364500662175 /* StatisticsView.swift in Sources */,
 				DA9E4A042A20365700662175 /* ActionBarView.swift in Sources */,
@@ -356,6 +373,7 @@
 				DA9E49F12A20358400662175 /* GuessingGame.swift in Sources */,
 				DA9E49BD2A2034EA00662175 /* tech_wordleApp.swift in Sources */,
 				DA9E49E92A20355300662175 /* Dictionary.swift in Sources */,
+				DAE211802A67D5E600CF4C79 /* AppOpenAdManager.swift in Sources */,
 				DA9E49ED2A20356700662175 /* Guess.swift in Sources */,
 				DA9E49FC2A20361500662175 /* ActivitySheetView.swift in Sources */,
 				DA9E49FE2A20362300662175 /* ResultsSummaryView.swift in Sources */,
@@ -428,11 +446,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.42;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -449,7 +468,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.42;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,11 +512,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.42;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,7 +528,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.42;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,11 +545,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.42;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JaysWords/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jays Words";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -542,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -557,11 +578,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.42;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9UT6F4B4LM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JaysWords/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jays Words";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -575,7 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.42;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaimetavares.tech-wordle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -700,6 +722,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAE211792A67C96700CF4C79 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAE2117A2A67C96700CF4C79 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAE211792A67C96700CF4C79 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA9E49B12A2034EA00662175 /* Project object */;
 }

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
+
 
 struct ContentView: View {
     
@@ -13,7 +15,7 @@ struct ContentView: View {
     @StateObject var game = GuessingGame()
     @State private var showStats = false
     @State private var showResults = false
-
+    
     var body: some View {
         VStack {
             Text("Jay's Words")

@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import GoogleMobileAds
 
 
 enum GameState {
@@ -40,6 +41,7 @@ class GuessingGame: ObservableObject {
     
     
     init() {
+        
         dictionary = Dictionary(length: wordLength)
         
         let totalWords = dictionary.commonWords.count
