@@ -45,9 +45,11 @@ struct ContentView: View {
                     showResults = true
                 }
             }
-            // load and show ad
-            adCoordinator.loadAd()
-            adCoordinator.presentAd(from: adViewControllerRepresentable.viewController)
+            if newStatus == .new {
+                // load and show ad
+                adCoordinator.loadAd()
+                adCoordinator.presentAd(from: adViewControllerRepresentable.viewController)
+            }
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .active {
