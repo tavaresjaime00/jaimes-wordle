@@ -27,8 +27,7 @@ struct ContentView: View {
                 .accessibilityAddTraits(.isHeader)
                 .foregroundColor(.green)
 
-                GameBoardView(game: game)
-
+            GameBoardView(game: game)
             
             KeyboardView(game: game)
             ActionBarView(showStats: $showStats, game: game)

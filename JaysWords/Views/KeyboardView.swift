@@ -28,7 +28,7 @@ struct KeyboardView: View {
                             )
                     }
                     
-                }.padding(4)
+                }.padding(1)
             }
         }
     }

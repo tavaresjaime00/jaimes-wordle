@@ -24,11 +24,11 @@ struct GameBoardView: View {
             ForEach($game.guesses) { guess in
                 CurrentGuessView(guess: guess, wordLength: game.wordLength)
             }
-            .padding(.bottom, 10)
+            .padding(.bottom, 1)
             ForEach(0..<unusedGuesses, id: \.self) { _ in
                 CurrentGuessView(guess: .constant(Guess()), wordLength: game.wordLength)
             }
-            .padding(.bottom)
+            .padding(.bottom, 1)
         }
       
     }

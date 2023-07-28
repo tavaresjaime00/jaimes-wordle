@@ -10,7 +10,7 @@ import SwiftUI
 struct KeyButtonView: View {
     @ObservedObject var game: GuessingGame
     var key: String
-    @ScaledMetric var dynamicSize: CGFloat = 1
+    @ScaledMetric var dynamicSize: CGFloat = 2
 
   var body: some View {
     Button {
@@ -19,29 +19,31 @@ struct KeyButtonView: View {
       switch key {
       case "<":
           Image(systemName: "delete.backward")
+              .aspectRatio(dynamicSize*2, contentMode: .fill)
               .foregroundColor(.red).opacity(0.9)
               .frame(maxWidth: .infinity)
 
       case ">":
           Image(systemName: "return")
+              .aspectRatio(dynamicSize*2, contentMode: .fill)
               .foregroundColor(.green)
               .frame(maxWidth: .infinity)
       default:
         Text(key)
-          .aspectRatio(dynamicSize, contentMode: .fit)
+          .aspectRatio(dynamicSize*2, contentMode: .fill)
           .frame(maxWidth: .infinity)
           .foregroundColor(.white)
            
       }
     }
-    .padding(dynamicSize)
+    .padding(dynamicSize*2)
     .background {
       RoundedRectangle(cornerRadius: 6.0)
         .stroke()
     }
     .background(game.colorForKey(key: key))
     .foregroundColor(Color(.white))
-    .font(.system(size: UIScreen.main.bounds.width/20))
+    .font(.system(size: UIScreen.main.bounds.width/15                                                                                                                                                         ))
     
   }
 }
